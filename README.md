@@ -51,6 +51,7 @@ Use the same database, JDBC driver, and `BOOKNEST_DB_PASSWORD` setting described
 On macOS or Linux:
 
 ```sh
+mkdir -p out
 javac -cp 'lib/*' -d out src/*.java
 java -cp 'out:lib/*' ConsoleLibraryApp
 ```
@@ -58,6 +59,7 @@ java -cp 'out:lib/*' ConsoleLibraryApp
 On Windows Command Prompt:
 
 ```bat
+mkdir out
 javac -cp "lib/*" -d out src\*.java
 java -cp "out;lib/*" ConsoleLibraryApp
 ```
