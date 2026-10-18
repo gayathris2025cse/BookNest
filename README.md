@@ -1,6 +1,6 @@
 # BookNest Library Management System
 
-A simple Java Swing library project using JDBC and MySQL.
+A simple Java library project with Swing and console versions. Both use JDBC and MySQL.
 
 ## Required software
 
@@ -43,6 +43,26 @@ java -cp "out;lib/*" LibraryApp
 ```
 
 Keep MySQL running while using the app. The buttons on the left open small input forms or show a table in the main window.
+
+## Run the console version
+
+Use the same database, JDBC driver, and `BOOKNEST_DB_PASSWORD` setting described above. From the BookNest folder, compile and run the text menu instead of `LibraryApp`:
+
+On macOS or Linux:
+
+```sh
+javac -cp 'lib/*' -d out src/*.java
+java -cp 'out:lib/*' ConsoleLibraryApp
+```
+
+On Windows Command Prompt:
+
+```bat
+javac -cp "lib/*" -d out src\*.java
+java -cp "out;lib/*" ConsoleLibraryApp
+```
+
+Enter a number from 0 to 9. Enter 0 to exit. The console and Swing versions share the same MySQL records.
 
 ## Quick feature check
 
